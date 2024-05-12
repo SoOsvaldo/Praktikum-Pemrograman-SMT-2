@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<title>Vintage Korean Shirt</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>MAOU STORE</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+
+    <div id="demoAcc3" class="w3-button w3-block w3-white w3-left-align"><a href="/catalogs/kemeja.html" class="w3-bar-item w3-button">Shirts</a> </div>
+
+    <div id="demoAcc3" class="w3-button w3-block w3-white w3-left-align"><a href="/catalogs/dress.html" class="w3-bar-item w3-button">Dresses</a> </div>
+
+    <div id="demoAcc3" class="w3-button w3-block w3-white w3-left-align"><a href="/catalogs/jaket-bomber.html" class="w3-bar-item w3-button">Jackets</a> </div>
+  </div>
+  
+  <a href="/about/About.html#contact" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="/about/About.html" class="w3-bar-item w3-button w3-padding">About Us</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">MAOU STORE</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Shirt</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+<style> 
+.w3-container h3 {color: red}
+</style>
+
+<div class="w3-container">
+  <h2>Women's Oversized Shirt</h2>
+  <h3>IDR 276.000</h3>
+</div>
+
+<div class="w3-row">
+  <div class="w3-col s6 w3-center">
+    <style>
+        .container {
+          position: relative;
+          width: 50%;
+        }
+        
+        .image {
+          display: block;
+          width: 100%;
+          height: auto;
+          margin-bottom: 30px;
+        }
+        
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: #008CBA;
+        }
+        
+        .container:hover .overlay {
+          opacity: 1;
+        }
+        
+        .text {
+          color: black;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+        }
+        </style>
+        </head>
+        <body>
+
+                <div class="w3-col s6 w3-center">
+                <img src="https://img.lazcdn.com/g/p/d21f60b62dc8d1f4eae09d18ad41281d.jpg_720x720q80.jpg" alt="Avatar" class="image" style=" width: 470px;; height: 470px;; margin: 0;">
+                <div class="overlay">
+                  <div class="text">IDR 276.000</div>
+                </div>
+              </div>
+  </div>
+  <div class="w3-col s5 w3-justify">
+    <p><strong>Name:</strong>Women's Oversized Shirt
+        <br><strong>Description:</strong> Embrace comfort and style with our Women's Oversized Shirt. 
+        Designed for a relaxed and effortless look, this shirt offers a contemporary twist on classic style. 
+        Crafted from soft and breathable fabric, it drapes beautifully for a flattering silhouette. 
+        The oversized fit provides comfort and versatility, perfect for layering or wearing on its own. 
+        Whether you're running errands or meeting friends for brunch, this shirt will keep you feeling 
+        comfortable and looking chic all day long.
+        <br><strong>Sizes:</strong> Oversized
+        <br><strong>Material:</strong> 100% Cotton
+        <br><strong>Available Colors:</strong>  White, Black, Blue, Pink
+        <br><strong>Fit:</strong> Oversized</p>
+  </div>
+</div>
+
+<div class="w3-row w3-container">
+  <div class="w3-col s6 w3-center">
+
+<!--pemilihan size-->  
+</div>
+<br>
+<div class="quantity-wrapper">
+  <div>
+    <label for="quantity" style="margin-right: 0.5rem;">Size:</label>
+    <select name="quantity" style="margin-bottom: 1rem;">
+      <option value disabled>Please select</option>
+      <option value="1" selected>Oversized</option>
+    </select>
+  </div>
+</div>
+
+   <!--Button-->
+<style>
+    .button {
+      background-color: red;
+      border: none;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 0;;
+      cursor: pointer;
+      width: 200px;
+    }
+    </style>
+    </head>
+    <body>
+    <button class="button" style="width: 200px;">Buy Now</button>
+</div>
+<!--button selesai-->
+<script src="/catalogs/catalog.js"></script>
+
+</body>
+</html>
