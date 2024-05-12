@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<title>Cale Black</title>
+<head>
+  <link rel="stylesheet" href="/transaction/style transaksi.css">
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="center-wrapper">
+	<div class="content">
+	<div class="top-bar">
+		<i class="fas fa-arrow-left"></i>
+		<span>Continue shopping</span>
+	</div>
+	<div class="bag">
+		<p class="bag-head"><span style="text-transform: uppercase">Your Bag</span> - 1 item</p>
+	</div>
+	<div class="bag-product">
+		<div class="image">
+			<img src="https://img.lazcdn.com/g/p/03cb6ed3dfec0a74c757d1e5f2778fa5.jpg_720x720q80.jpg" class="product-image" style="width: 90%;">
+		</div>
+		<div class="description">
+			<p class="product-code small muted">Product code: DD1</p>
+			<h1>Glize Dress</h1>
+			<h2>IDR 342.000</h2>
+			<div class="quantity-wrapper">
+				<div>
+					<label for="quantity" style="margin-right: 0.5rem;">Quantity:</label>
+						<input type="number" id="quantity" value="1" min="1">
+					</select>
+					<br>
+					<br>
+					<label for="size" style="margin-right: 0.5rem;">Size:</label>
+					<select name="size" style="margin-bottom: 1rem;" id="ukuran">
+						<option value disabled>Please select</option>
+						<option value="S">S</option>
+						<option value="M">M</option>
+						<option value="L">L</option>
+						<option value="XL">XL</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bag-total">
+		<div class="subtotal">
+			<p class="small">Subtotal:</p>
+			<p class="small" id="hrgbrg"></p>
+		</div>
+		<div class="delivery">
+			<p class="small">Delivery (Standard - 2 working days):<br>
+				<span class="change-delivery">Change delivery method</span></p>
+			<p class="small">IDR 30.000</p>
+		</div>
+		<div class="total">
+			<h3>Total:</h3>
+			<h3 id="jumlah"></h3>
+		</div>
+		<div class="promo-checkbox">
+			<input type="checkbox" name="promo-check" checked>
+			<label for="promo-check">I have a promo code</label>
+		</div>
+		<div class="promo-code">
+			<input type="text" name="promo-checkbox" placeholder="Enter your promo code here" checked>
+			<button class="apply">Apply</button>
+		</div>
+		<button onclick="document.location= '/transaction/payment/Dress/Bayar GD.html'" class="btn-go-checkout">
+			<i class="fas fa-lock"></i>
+			<span >Go to Checkout</span>
+		</button>
+	</div>
+	<div class="help">
+		<p>Need help? Call free 081233455678</p>
+	</div>
+</div>
+</div>
+<div class="bg"></div>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script src="/transaction/sc/Dress/harga GD.js"></script>
+</body>
+</html>
