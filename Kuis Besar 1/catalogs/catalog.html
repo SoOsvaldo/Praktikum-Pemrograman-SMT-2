@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ame-Kemeja</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>LOGO</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="javascript:void(0)" onclick="myAccFunc('demoAcc')" class="w3-button w3-block w3-white w3-left-align" id="myBtn1">
+      Shirts <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#shirts" class="w3-bar-item w3-button w3-light-grey" onclick="highlightItem(this)"><i class="fa fa-caret-right w3-margin-right"></i>Shirts</a>
+    </div>
+    <a href="javascript:void(0)" onclick="myAccFunc('demoAcc2')" class="w3-button w3-block w3-white w3-left-align" id="myBtn2">
+      Dresses <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#dress" class="w3-bar-item w3-button">Dresses</a>
+    </div>
+    <a href="javascript:void(0)" onclick="myAccFunc('demoAcc3')" class="w3-button w3-block w3-white w3-left-align" id="myBtn3">
+      Jackets <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#jacket" class="w3-bar-item w3-button">Bomber</a>
+    </div>
+  </div>
+  <a href="/about/About.html#contact" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="/about/About.html" class="w3-bar-item w3-button w3-padding">About Us</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+
+                                                <!-- Shirts -->
+
+  <div class="w3-container w3-padding-64 w3-left" id="shirts">
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Shirts</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="https://cdn-image.hipwee.com/wp-content/uploads/2019/11/hipwee-page-34.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">Koleksi Terbaru</h1>
+      <h1 class="w3-hide-large w3-hide-medium">Koleksi Terbaru</h1>
+      <h1 class="w3-hide-small">Koleksi Kemeja</h1>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">BELANJA SEKARANG</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 barang</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7qul4-lhomg23zckj43a" style="width:100%">
+        <p>Kemeja Pria Blue Sky<br><b>Rp.234.000</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//98/MTA-20673682/no_brand_kemeja_flanel_pria_lengan_panjang_original_full09_okklit6s.jpg" style="width:100%">
+        <p>Kemeja Kotak<br><b>Rp.179.000</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://m231.com/cdn/shop/products/86e58dad8ed863f95b676ecc9b3f1034_800x.jpg?v=1617871675" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Baru</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Beli Sekarang<i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Kemeja Polos Pria<br><b>Rp.150.000</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://img.lazcdn.com/g/p/d21f60b62dc8d1f4eae09d18ad41281d.jpg_720x720q80.jpg" style="width:100%">
+        <p>Kemeja Oversize Wanita<br><b>Rp.276.000</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://static.jakmall.id/2023/06/images/products/4987ef/thumbnail/kemeja-lengan-pendek-wanita-gaya-korea-model-terbaru-jfashion-nelly.jpg" style="width:100%">
+        <p>Kemeja Shimmer Wanita<br><b>Rp.200.000</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://www.batikfilosofia.com/wp-content/uploads/2023/01/Foto-Kemeja-Batik-Lengan-Pendek.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Diskon</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Beli Sekarang<i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Kemeja Batik Pria<br><b class="w3-text-red">Rp.167.000</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://images.tokopedia.net/img/cache/700/hDjmkQ/2023/3/10/22f93a29-486b-4219-9f8a-460978478d4c.jpg" style="width:100%">
+        <p>Kemeja Batik Wanita<br><b>Rp.130.000</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://ae01.alicdn.com/kf/S8cb4ca95b82c49d58a216cee448e9593V.jpg_640x640Q90.jpg_.webp" style="width:100%">
+        <p>Kemeja Korea Vintage<br><b>Rp.184.000</b></p>
+      </div>
+    </div>
+  </div>
+
+                                                <!-- Dress -->
+<div class="w3-container w3-padding-64 w3-left" id="dress">
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Dress</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="https://assets.promediateknologi.id/crop/0x128:720x1443/750x500/webp/photo/2023/08/08/Screenshot_20230808_115003-2907804217.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">Koleksi Terbaru</h1>
+      <h1 class="w3-hide-large w3-hide-medium">Koleksi Terbaru</h1>
+      <h1 class="w3-hide-small">Koleksi Dress</h1>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">BELANJA SEKARANG</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 barang</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://img.lazcdn.com/g/p/03cb6ed3dfec0a74c757d1e5f2778fa5.jpg_720x720q80.jpg" style="width:100%">
+        <p>Glize Dress<br><b>Rp.342.000</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://img.ws.mms.shopee.co.id/5f9bdd43e7403f9847942e2b6a76bf41" style="width:100%">
+        <p>Flower Dress<br><b>Rp.321.000</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2021/6/14/a9bdec4c-f443-45ac-aa71-4dc6b5caffd2.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Baru</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Beli Sekarang<i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Midi With Cute Sleve<br><b>Rp.345.000</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//catalog-image/96/MTA-114177704/no_brand_cod_dress-dress_putih-dress_putih_korea-dress_putih_wanita-dress_wanita-dress_hitam-dress_korean_style-dress_korea-dress_putih_panjang-dres_putih_full01_io8nd8ws.jpg" style="width:100%">
+        <p>White Dress<br><b>Rp.543.000</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r991-lotx8wtofxik9d" style="width:100%">
+        <p>green dress<br><b>Rp.365.000</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//106/MTA-24456769/zaza_zaza-fashion_dress_wanita_terbaru_import_real_pict_dress_wanita_korea_1470_polka_doll_full01_l0kmpyud.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Diskon</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Beli Sekarang<i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Polkadot Dress<br><b class="w3-text-red">Rp.453.000</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2020/11/30/6108de20-9156-4f36-ae61-1ee271449884.jpg" style="width:100%">
+        <p>Korean dress<br><b>Rp.289.000</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="https://s3.bukalapak.com/img/32573330203/s-463-463/data.jpeg.webp" style="width:100%">
+        <p>Korean Jeans Dress<br><b>Rp.543.000</b></p>
+      </div>
+    </div>
+  </div>                                                
+
+                                                <!-- Jacket -->
+  <div class="w3-container w3-padding-64 w3-left" id="jacket">
+      <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Jackets</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="https://www.mrporter.com/cms/ycm/resource/blob/1412138/91edd48ea6b18b893a35654bc579d6a5/image-mobile-data.jpg" alt="Jeans" style="width:90%;
+    opacity:50%">
+    <div class="w3-display-left w3-text-white" style="padding:24px 48px">
+      <h2 class="w3-jumbo w3-hide-small">PRODUK BARU</h2>
+      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+      <p><a href="#Jacket" class="w3-button w3-black w3-padding-large w3-large">ORDER SEKARANG</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+              <img src="https://www.screamous.com/cdn/shop/files/id-11134207-7r98t-lnwb7clx61jq16.jpg?v=1699588216" style="width:100%">
+              <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Beli Sekarang <i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+            <p>Bomber Jacket CALE BLACK<br><b>Rp.220.000</b></p>
+          </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2021/5/2/43aefc9b-ddac-49d3-b741-fc8ed2a1d422.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Beli Sekarang <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Harley-Davidson Classic Bomber Jacket<br><b>IDR 3.714.690</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://img.lazcdn.com/g/p/d6c1eeb09c8d1d485ea1bd2659b8a95b.jpg_960x960q80.jpg_.webp" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Best Seller</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Beli Sekarang <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Water-Resistant Zip Bomber Jacket<br><b>IDR 500.000 </b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://img.lazcdn.com/g/p/db47b0927a7147ba071f478a5eeda9f7.jpg_720x720q80.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Beli Sekarang <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>KREMLIN Bomber Jacket Black Tactical - Crossbone<br><b>IDR 563.402</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rbky-lpf1yy1na86rbc_tn.webp" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Beli Sekarang <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Les Deux Norman Quilted Bomber Jacket<br><b>IDR 750.000</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://www.uno-apparel.com/wp-content/uploads/2020/01/Veste-Bomber-Jacket.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Beli Sekarang <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Veste Bomber Jacket<br><b>IDR 780.000</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsWptqgkz-kAsMbA0qPrQmHzSLDOZu4hoWo-0UKpqJMA&s" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Beli Sekarang <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Navy Twill Resistant Zip Bomber Jacket<br><b>IDR 280.000</b></p>
+      </div>
+    </div>
+    <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="https://cdn.webshopapp.com/shops/273202/files/439985464/1024x1024x1/alpha-industries-ma-1-d-tec-rep-grey.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+          <button class="w3-button w3-black">Beli Sekarang <i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+      <p>Alpha Industries Bomber Jacket <br><b>IDR 1.000.000</b></p>
+    </div>
+    </div>
+  </div>
+
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+</div>
+
+<script src="catalog.js"></script>
+
+</body>
+</html>
+
